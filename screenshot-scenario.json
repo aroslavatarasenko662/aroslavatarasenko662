@@ -1,0 +1,68 @@
+{
+  "app": "MagmaTrail",
+  "notes": "tapFrac is normalised screen space, y from the top. The menu numbers come from the template canvas (1242x2688 reference, match-width, letterboxed by the AspectRatioFitter); the run HUD uses fractional anchors, so its numbers hold on any aspect.",
+  "steps": [
+    {
+      "wait": 4,
+      "shot": "01_Splash_Brand"
+    },
+    {
+      "waitLoader": true,
+      "shot": "02_Menu_Hub"
+    },
+    {
+      "tapFrac": [
+        0.3043,
+        0.3681
+      ],
+      "label": "DAILY_TILE",
+      "wait": 2,
+      "shot": "03_Daily_Challenge"
+    },
+    {
+      "tapFrac": [
+        0.8631,
+        0.2188
+      ],
+      "label": "OVERLAY_CLOSE",
+      "wait": 2,
+      "shot": "04_Menu_Ready"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.7289
+      ],
+      "label": "PLAY",
+      "waitLoader": true,
+      "shot": "05_Game_Start"
+    },
+    {
+      "tapFrac": [
+        0.25,
+        0.48
+      ],
+      "label": "STEP_LEFT",
+      "wait": 5,
+      "shot": "06_Game_LaneShift"
+    },
+    {
+      "tapFrac": [
+        0.75,
+        0.6
+      ],
+      "label": "STEP_RIGHT",
+      "wait": 6,
+      "shot": "07_Game_EmberRun"
+    },
+    {
+      "tapFrac": [
+        0.9074,
+        0.055
+      ],
+      "label": "PAUSE",
+      "wait": 2,
+      "shot": "08_Pause_Pop"
+    }
+  ]
+}
